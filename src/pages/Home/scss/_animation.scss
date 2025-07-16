@@ -1,0 +1,54 @@
+.balls-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: transparent;
+
+  .ball {
+    position: absolute;
+    top: 50%;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    transform: translateY(-50%);
+
+    &--1 {
+      background: red;
+      animation-delay: 0s;
+      animation: move-ball1 6s linear infinite;
+      box-shadow: 0 0 4px #ff0000, 0 0 8px #ff0000, 0 0 16px #ff0000,
+        0 0 22px #ff0000;
+    }
+
+    &--2 {
+      background: #014486;
+      animation-delay: 0s;
+      animation: move-ball2 6s linear infinite;
+      box-shadow: 0 0 4px #014486, 0 0 8px #014486, 0 0 16px #014486,
+        0 0 22px #014486;
+    }
+  }
+}
+
+@keyframes move-ball1 {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: 77%;
+  }
+  100% {
+    right: 0;
+  }
+}
+@keyframes move-ball2 {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 77%;
+  }
+  100% {
+    left: 0;
+  }
+}

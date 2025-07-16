@@ -1,0 +1,22 @@
+@use "navBar";
+@use "animation";
+@use "presentation";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  height: 100vh;
+}
+.page1 {
+  height: 100vh;
+  padding-bottom: 20em;
+  background: linear-gradient(to bottom, #0b0b0b 0%, #101012 60%, #000000 100%);
+}
+
+h2 {
+  color: #014486;
+  text-shadow: #014486 0px 0px 10px;
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .navBar {
   display: flex;
   align-items: center;
@@ -155,6 +156,36 @@ body {
 h2 {
   color: #014486;
   text-shadow: #014486 0px 0px 10px;
+}
+
+/* Celulares pequenos (até 640px) - mobile first */
+@media (max-width: 639px) {
+  .navBar {
+    display: flex;
+    justify-content: center;
+  }
+  .navBar__logo {
+    padding: 0;
+  }
+  .navBar__links {
+    display: none;
+  }
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+/* Tablets (entre 640px e 1023px) */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .navBar__logo {
+    padding-right: 3em;
+  }
+  .container {
+    padding: 0em 8em 0em 2em;
+  }
+  .page1 {
+    padding-bottom: 5em;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

@@ -1,11 +1,7 @@
 function Presentation() {
   return (
     <div className="presentation">
-      <img
-        src="/public/imgs/vitor.jpeg"
-        alt="Eu"
-        className="presentation__img"
-      />
+      <img src="/vitor.jpeg" alt="Eu" className="presentation__img" />
       <section style={{ width: "fit-content" }}>
         <h2 className="presentation__name">
           Vitor{" "}

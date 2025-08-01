@@ -1,71 +1,49 @@
+import CardTecnology from "./CardTecnology";
+
 function Tecnologia() {
   return (
     <section className="container2">
       <h1>Tecnologias</h1>
+
       <div className="container__cards">
-        <div className="card">
-          <section className="card__header">
-            <h3 style={{ color: "#014486" }}>HTML</h3>
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-              alt="HTML"
-              className="card__header__icon"
-            />
-          </section>
-          <div className="card__content">
-            <p>
-              Estrutura básica e semântica de páginas web para organizar
-              conteúdo.
-            </p>
-          </div>
-        </div>
-        <div className="card">
-          <section className="card__header">
-            <h3 style={{ color: "#014486" }}>CSS</h3>
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-              alt="CSS"
-              className="card__header__icon"
-            />
-          </section>
-          <div className="card__content">
-            <p>
-              Estilização visual das páginas, controlando layout, cores e
-              responsividade.
-            </p>
-          </div>
-        </div>
-        <div className="card">
-          <section className="card__header">
-            <h3 style={{ color: "#014486" }}>JS</h3>
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-              alt="JS"
-              className="card__header__icon"
-            />
-          </section>
-          <div className="card__content">
-            <p>
-              Linguagem de programação para tornar a web interativa e dinâmica.
-            </p>
-          </div>
-        </div>
-        <div className="card">
-          <section className="card__header">
-            <h3 style={{ color: "#014486" }}>React</h3>
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-              alt="REACT"
-              className="card__header__icon"
-            />
-          </section>
-          <div className="card__content">
-            <p>
-              Biblioteca JavaScript para criar interfaces de usuário
-              reutilizáveis e reativas.
-            </p>
-          </div>
-        </div>
+        <CardTecnology
+          name="HTML"
+          icon="https://cdn.simpleicons.org/html5/ff5722.svg"
+          description="Linguagem usada para estruturar o conteúdo de páginas web."
+        />
+        <CardTecnology
+          name="CSS"
+          icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+          description="Linguagem de estilo que define aparência, cores e layout."
+        />
+        <CardTecnology
+          name="JS"
+          icon="https://cdn.simpleicons.org/javascript/f7df1e.svg"
+          description="Linguagem que dá interatividade e dinamismo aos sites."
+        />
+        <CardTecnology
+          name="React"
+          icon="https://cdn.simpleicons.org/react/61dafb.svg"
+          description="Biblioteca para criar interfaces de usuário reativas."
+        />
+      </div>
+
+      <div className="container__cards2">
+        <CardTecnology
+          name="Sass"
+          icon="https://cdn.simpleicons.org/sass/cc6699.svg"
+          description="Extensão do CSS que adiciona variáveis e funções."
+        />
+        <CardTecnology
+          name="Tailwind"
+          icon="https://cdn.simpleicons.org/tailwindcss/06B6D4.svg"
+          description="Framework para estilização rápida com classes no HTML."
+        />
+        <CardTecnology
+          name="Bootstrap"
+          icon="https://cdn.simpleicons.org/bootstrap/7952B3.svg"
+          description="Framework CSS com componentes prontos e sistema de layout responsivo."
+        />
       </div>
     </section>
   );

@@ -40,9 +40,14 @@ function Tecnologia() {
           description="Framework para estilização rápida com classes no HTML."
         />
         <CardTecnology
-          name="Bootstrap"
-          icon="https://cdn.simpleicons.org/bootstrap/7952B3.svg"
-          description="Framework CSS com componentes prontos e sistema de layout responsivo."
+          name="Node.js"
+          icon="https://cdn.simpleicons.org/node.js/339933.svg"
+          description="Ambiente de execução JavaScript no servidor."
+        />
+        <CardTecnology
+          name="Prisma & MongoDB"
+          icon="https://cdn.simpleicons.org/prisma/2D3748.svg"
+          description="ORM moderno para facilitar o uso do MongoDB."
         />
       </div>
     </section>
